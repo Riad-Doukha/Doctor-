@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config={
+        darkMode : "class",
+        theme: {
+         extend: {
+          fontFamily: {
+            poppins:["Poppins", "sans-serif"],
+          },
+         },
+       },
+     }
+    </script>
+  </head>
+  <body class="font-poppins flex flex-col items-center bg-[#F2F7FF] max-sm:overflow-x-hidden">
+    <main class="max-w-[1200px]">
+      <!-- Navbar -->
+      <nav class="flex items-center justify-between h-[12vh] relative max-sm:justify-center">
+        <img
+          src="images/brand.png"
+          alt="logo"
+          class="ml-[40px] h-[7vh] self-center relative bottom-3"
+        />
+        <ul
+          class="list-none flex gap-10 items-center cursor-pointer text-[#6C87AE] max-sm:hidden"
+        >
+          <li
+            class="text-[#3A8EF6] hover:scale-[1.2] hover:transform transition-transform duration-[0.4s]"
+          >
+            Home
+          </li>
+          <li
+            class="hover:scale-[1.2] hover:transform transition-transform duration-[0.4s]"
+          >
+            About
+          </li>
+          <li
+            class="hover:scale-[1.2] hover:transform transition-transform duration-[0.4s]"
+          >
+            Services
+          </li>
+          <li
+            class="hover:scale-[1.2] hover:transform transition-transform duration-[0.4s]"
+          >
+            Contact
+          </li>
+        </ul>
+        <!-- <button onclick="document.documentElement.classList.toggle('dark')">dark</button> -->
+        <button
+          class="flex max-sm:hidden gap-2 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] mr-[40px] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+        >
+          <img src="images/message-circle.png" alt="message" /> Book Now
+        </button>
+      </nav>
+      <!-- Hero section -->
+      <section class="flex justify-evenly items-center h-[68vh] max-sm:flex-col-reverse max-sm:h-auto max-sm:justify-end">
+        <div class="ml-[5vw] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:m-0">
+          <h1 class="text-[#00BFA5] mb-[10vh] max-sm:mb-[3vh] text-[20px] font-bold max-sm:text-center">
+            Dr. Matthew Anderson
+          </h1>
+          <p class="text-[#6C87AE] w-[40vw] mb-[5vh] max-sm:text-center max-sm:w-[70vw]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+            eget vel, nunc nulla feugiat. Metus ut.
+          </p>
+          <button
+            class="flex max-sm:m-0 gap-2 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] mr-[40px] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+          >
+            <img src="images/message-circle.png" alt="contact" />Book an
+            appointment
+          </button>
+        </div>
+        <div>
+          <img src="images/Object.png" alt="heroimg" class="w-[60vh] max-sm:w-[45vh] max-sm:mb-[20px]" />
+        </div>
+      </section>
+
+      <section class="flex justify-center gap-[2.5vw] items-center h-[20vh] max-sm:h-auto max-sm:mt-[5vh] max-sm:flex-col">
+        <div
+          class="flex w-[20vw] max-sm:w-[80vw] items-center justify-center py-[10px] px-[10px] gap-5 bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white rounded-[12px]"
+        >
+          <img src="images/clock.png" alt="" />
+          <div class="w-[80%]">
+            <h3 class="font-bold text-[100%]">24 hour service</h3>
+            <p class="text-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div
+          class="flex w-[20vw] max-sm:w-[80vw] items-center justify-center py-[10px] px-[10px] gap-5 bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white rounded-[12px]"
+        >
+          <img src="images/check-circle.png" alt="" />
+          <div class="w-[80%]">
+            <h3 class="font-bold text-[100%]">8 years of experience</h3>
+            <p class="text-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div
+          class="flex w-[20vw] max-sm:w-[80vw] items-center justify-center py-[10px] px-[10px] gap-5 bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white rounded-[12px]"
+        >
+          <img src="images/MedicalSymbol.png" alt="" />
+          <div class="w-[80%]">
+            <h3 class="font-bold text-[100%]">High quality care</h3>
+            <p class="text-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </section>
+      <!-- About me -->
+      <section class="h-[80vh] flex items-center justify-evenly max-sm:h-auto max-sm:flex-col max-sm:justify-start">
+        <div class="relative mt-10">
+          <img
+            src="images/plusicons.png"
+            alt="plus"
+            class="w-[40vw] h-[70vh] z-10 relative max-sm:w-[70vw] max-sm:h-[35vh]"
+          />
+          <img
+            src="images/Group 9420.png"
+            alt="doctor"
+            class="w-[30vw] h-[52vh] absolute top-[9%] right-[13%] z-0 max-sm:w-[55vw] max-sm:h-[26vh]"
+          />
+        </div>
+        <div class="w-[40vw] max-sm:w-[80vw] max-sm:flex max-sm:flex-col items-center max-sm:text-center">
+          <h3 class="text-[#00BFA5] mb-[3vh] text-[20px] font-bold">
+            About me
+          </h3>
+          <h1 class="mb-[3vh] text-[40px] font-bold max-sm:text-[30px]">
+            A dedicated doctor with the core mission to help
+          </h1>
+          <p class="text-[#6C87AE] mb-[3vh] w-[93%]">
+            orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin
+            nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis
+            nunc elementum. Tellus quam mauris aenean turpis vulputate sodales
+            nullam lobortis. Vulputate tortor tincidun.
+          </p>
+          <button
+            class="flex gap-2 max-sm:m-0 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] mr-[40px] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+          >
+            <img src="images/whatsapp.png" alt="contact" /> Book an Appointment
+          </button>
+        </div>
+      </section>
+      <!-- services -->
+      <section class="h-auto bg-[#F2F7FF] px-[10vw] max-sm:h-auto max-sm:mt-[50px]">
+        <div
+          class="flex flex-row-reverse justify-evenly items-center h-[100vh] max-sm:flex-col max-sm:justify-start"
+        >
+          <img src="images/Visual.png" alt="services" class="w-[30vw] max-sm:w-[50vw] max-sm:mb-[50px]" />
+          <div class="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:text-center">
+            <h3 class="text-[#00BFA5] mb-[3vh] text-[20px] font-bold">
+              Services
+            </h3>
+            <h1 class="mb-[3vh] text-[40px] font-bold max-sm:text-[30px]">
+              Experienced in multiple medical practices
+            </h1>
+            <p class="text-[#6C87AE] mb-[3vh] w-[83%]">
+              orem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
+              egestas viverra turpis habitant eu sociis fermentum felis
+            </p>
+            <button
+              class="flex gap-2 max-sm:m-0 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] mr-[40px] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+            >
+              <img src="images/whatsapp.png" alt="contact" /> Book an
+              Appointment
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="grid max-sm:grid-cols-1 max-sm:grid-rows-6 max-sm:mt-[30px] grid-rows-2 grid-cols-3 gap-[20px] justify-center items-center max-sm:gap-[20px]"
+        >
+          <div
+            class="flex flex-col justify-evenly items-center bg-[#FFFFFF] rounded-[24px] p-[30px] m-[20px] max-sm:m-0 h-[82vh]"
+          >
+            <img src="images/02-Semiología.png" alt="steto" />
+            <div class="flex flex-col items-start max-sm:items-center max-sm:text-center">
+              <h2 class="text-start font-bold text-[30px] my-[20px]">
+                General
+              </h2>
+              <p class="w-[70%] mb-[20px] text-start max-sm:text-center">
+                Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                iTristique id nibh lobortis nunc
+              </p>
+            </div>
+            <button
+              class="flex test-[100%] gap-2 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+            >
+              <img src="images/whatsapp.png" alt="contact" /> Book an
+              Appointment
+            </button>
+          </div>
+          <div
+            class="flex flex-col justify-evenly items-center bg-[#FFFFFF] rounded-[24px] p-[30px] m-[20px] max-sm:m-0 h-[82vh]"
+          >
+            <img src="images/icon1.png" alt="" class="h-[200px] w-[180px]" />
+            <div class="flex flex-col items-start max-sm:items-center max-sm:text-center">
+              <h2 class="text-start font-bold text-[30px] my-[20px]">
+                Pediatrics
+              </h2>
+              <p class="w-[70%] mb-[20px] text-start max-sm:text-center">
+                Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                iTristique id nibh lobortis nunc
+              </p>
+            </div>
+            <button
+              class="flex test-[100%] gap-2 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+            >
+              <img src="images/whatsapp.png" alt="contact" /> Book an
+              Appointment
+            </button>
+          </div>
+          <div
+            class="flex flex-col justify-evenly items-center bg-[#FFFFFF] rounded-[24px] p-[30px] m-[20px] max-sm:m-0 h-[82vh]"
+          >
+            <img
+              src="images/Rectangle 1080.png"
+              alt=""
+              class="h-[200px] w-[200px]"
+            />
+            <div class="flex flex-col items-start max-sm:items-center max-sm:text-center">
+              <h2 class="text-start font-bold text-[30px] my-[20px]">
+                Nutritional
+              </h2>
+              <p class="w-[70%] mb-[20px] text-start max-sm:text-center">
+                Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                iTristique id nibh lobortis nunc
+              </p>
+            </div>
+            <button
+              class="flex test-[100%] gap-2 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+            >
+              <img src="images/whatsapp.png" alt="contact" /> Book an
+              Appointment
+            </button>
+          </div>
+          <div
+            class="flex flex-col justify-evenly items-center bg-[#FFFFFF] rounded-[24px] p-[30px] m-[20px] max-sm:m-0 h-[82vh]"
+          >
+            <img src="images/healthy-copia.png" alt="" />
+            <div class="flex flex-col items-start max-sm:items-center max-sm:text-center">
+              <h2 class="text-start font-bold text-[30px] my-[20px]">
+                Cardiology
+              </h2>
+              <p class="w-[70%] mb-[20px] text-start max-sm:text-center">
+                Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                iTristique id nibh lobortis nunc
+              </p>
+            </div>
+            <button
+              class="flex test-[100%] gap-2 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+            >
+              <img src="images/whatsapp.png" alt="contact" /> Book an
+              Appointment
+            </button>
+          </div>
+          <div
+            class="flex flex-col justify-evenly items-center bg-[#FFFFFF] rounded-[24px] p-[30px] m-[20px] max-sm:m-0 h-[82vh]"
+          >
+            <img src="images/Ciencias-Básicas.png" alt="" />
+            <div class="flex flex-col items-start max-sm:items-center max-sm:text-center">
+              <h2 class="text-start font-bold text-[30px] my-[20px]">
+                Ophthalmology
+              </h2>
+              <p class="w-[60%] mb-[20px] text-start max-sm:text-center">
+                Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                iTristique id nibh lobortis nunc
+              </p>
+            </div>
+            <button
+              class="flex test-[100%] gap-2 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+            >
+              <img src="images/whatsapp.png" alt="contact" /> Book an
+              Appointment
+            </button>
+          </div>
+          <div
+            class="flex flex-col justify-evenly items-center bg-[#FFFFFF] rounded-[24px] p-[30px] m-[20px] max-sm:m-0 h-[82vh]"
+          >
+            <img src="images/ambulance-copia.png" alt="" />
+            <div class="flex flex-col items-start max-sm:items-center max-sm:text-center">
+              <h2 class="text-start font-bold text-[30px] my-[20px]">
+                Orthopedics
+              </h2>
+              <p class="w-[70%] mb-[20px] text-start max-sm:text-center">
+                Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                iTristique id nibh lobortis nunc
+              </p>
+            </div>
+            <button
+              class="flex test-[100%] gap-2 items-center bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s]"
+            >
+              <img src="images/whatsapp.png" alt="contact" /> Book an
+              Appointment
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Appointment -->
+      <section
+        class="h-[90vh] flex flex-col justify-center items-center relative"
+      >
+        <div class="max-sm:justify-start">
+          <h3 class="text-[#00BFA5] mb-[6vh] text-[20px] font-bold text-center">
+            Book an appointment
+          </h3>
+          <div
+            class="h-[40vh] w-[80vw] flex flex-col justify-center gap-[3vh] items-center bg-gradient-to-r from-[#1678F2] to-[#65A8FB] rounded-[50px] text-white max-sm:h-auto"
+          >
+            <h1 class="text-[30px] font-bold max-sm:text-[20px] max-sm:self-center max-sm:text-center max-sm:w-[80vw] max-sm:px-[20px] max-sm:pt-[20px]">
+              Schedule a virtual or presential appointment today
+            </h1>
+            <p class="w-[45vw] text-center max-sm:w-[60vw]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
+              egestas viverra turpis habitant eu sociis fermentum felis.
+            </p>
+            <button
+              class="flex gap-2 items-center bg-white text-[#3A8EF6] px-[20px] py-[10px] rounded-full font-bold hover:scale-[1.1] duration-[0.4s] max-sm:py-[7.5px] max-sm:px-[10px] max-sm:mb-[20px]"
+            >
+              <img src="images/whatsappb.png" alt="contact" /> Book an
+              Appointment
+            </button>
+          </div>
+          <img src="images/plus.png" alt="" class="absolute top-[24vh] max-sm:hidden" />
+          <img
+            src="images/plus.png"
+            alt=""
+            class="absolute top-[40vh] right-[2vw] h-[60px] max-sm:hidden"
+          />
+          <img
+            src="images/plus.png"
+            alt=""
+            class="absolute top-[55vh] left-[3vw] h-[30px] max-sm:hidden"
+          />
+          <img
+            src="images/plus.png"
+            alt=""
+            class="absolute right-[10vw] bottom-[10vh] max-sm:hidden"
+          />
+          <img
+            src="images/plus.png"
+            alt=""
+            class="absolute top-[26vh] right-[15vw] h-[30px] max-sm:hidden"
+          />
+          <img
+            src="images/plus.png"
+            alt=""
+            class="absolute h-[60px] right-[70vw] bottom-[13vh] max-sm:hidden"
+          />
+        </div>
+      </section>
+      <!-- Motivation -->
+      <section
+        class="h-[100vh] flex flex-col items-center gap-[2vh] justify-center max-sm:h-auto max-sm:justify-start max-sm:gap-[0vh]"
+      >
+        <h3 class="text-[#00BFA5] text-[20px] font-bold text-center max-sm:mb-[20px]">
+          Why Dr. Matthew Anderson?
+        </h3>
+        <div class="h-[40vh] w-[35vw] relative max-sm:h-[30vh] max-sm:w-[80vw]">
+          <video
+            src="video/video.mp4"
+            poster="images/Rectangle 1075.png"
+            class="rounded-[32px] h-full w-full"
+          ></video>
+          <button
+            class="absolute bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] py-[10px] pl-[10px] pr-[5px] rounded-full flex justify-center top-[41%] left-[42%]"
+          >
+            <img src="images/play.png" alt="" class="max-sm:h-[10vw]"/>
+          </button>
+        </div>
+        <div class="flex flex-col items-center text-center mt-[20px] mb-[50px] max-sm:flex max-sm:flex-col max-sm:items-center">
+          <h1 class="mb-[3vh] text-[40px] font-bold max-sm:text-[30px] max-sm:w-[80%]">
+            A dedicated doctor with the core mission to help
+          </h1>
+          <p class="w-[50vw] text-[#6C87AE] max-sm:w-[70vw]">
+            orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin
+            nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis
+            nunc elementum. Tellus quam mauris aenean turpis vulputate sodales
+            nullam lobortis. Vulputate tortor tincidun.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="flex justify-center gap-[2.5vw] items-center h-[13vh] pb-[10vh] max-sm:h-[30vh] max-sm:flex-col max-sm:pb-0"
+      >
+        <div
+          class="flex w-[20vw] max-sm:w-[80vw] items-center justify-center py-[10px] pl-[10px] gap-5 bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white rounded-[12px]"
+        >
+          <img src="images/clock.png" alt="" />
+          <div class="w-[80%]">
+            <h3 class="font-bold text-[100%]">+15 years of experience</h3>
+          </div>
+        </div>
+        <div
+          class="flex w-[20vw] max-sm:w-[80vw] items-center justify-center py-[10px] pl-[10px] gap-5 bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white rounded-[12px]"
+        >
+          <img src="images/check-circle.png" alt="" />
+          <div class="w-[80%]">
+            <h3 class="font-bold text-[100%]">Urgent 24 hour service</h3>
+          </div>
+        </div>
+        <div
+          class="flex w-[20vw] max-sm:w-[80vw] items-center justify-center py-[10px] pl-[10px] gap-5 bg-gradient-to-r from-[#3A8EF6] to-[#6F3AFA] text-white rounded-[12px]"
+        >
+          <img src="images/MedicalSymbol.png" alt="" />
+          <div class="w-[80%]">
+            <h3 class="font-bold text-[100%]">High quality care</h3>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="h-[130vh] flex flex-col justify-center bg-[#F2F7FF] py-[30vh] max-sm:h-auto max-sm:justify-start max-sm:py-[10vh] max-sm:mb-[10px]"
+      >
+        <div class="flex flex-col items-center text-center mt-[20px] mb-[10vh]">
+          <h1 class="mb-[3vh] text-[40px] font-bold w-[60vw] max-sm:text-[30px] max-sm:w-[80%]">
+            What our great customers say about Dr. Matthew Anderson
+          </h1>
+          <p class="w-[40vw] text-[#6C87AE] max-sm:w-[70vw]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-2 grid-rows-2 max-sm:flex max-sm:flex-col justify-center items-center relative"
+        >
+          <div
+            class="ml-[15vw] mr-[2vw] mb-[2vw] p-[20px] rounded-[32px] bg-white max-sm:mb-[20px] max-sm:mr-[5vw]"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <div class="flex gap-[10px] mt-[20px]">
+              <img src="images/Ellipse 17.png" alt="" />
+              <div>
+                <h3 class="text-[#00BFA5] text-[20px]">Samy White</h3>
+                <h6 class="text-[#6C87AE] text-[12px]">Cardiology Patient</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mr-[15vw] ml-[2vw] mb-[2vw] p-[20px] rounded-[32px] bg-white max-sm:mb-[20px] max-sm:ml-[5vw]"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <div class="flex gap-[10px] mt-[20px]">
+              <img src="images/Ellipse 17 (1).png" alt="" />
+              <div>
+                <h3 class="text-[#00BFA5] text-[20px]">Arthur Northon</h3>
+                <h6 class="text-[#6C87AE] text-[12px]">Nutrion Patient</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ml-[15vw] mr-[2vw] mt-[2vw] p-[20px] rounded-[32px] bg-white max-sm:mb-[20px] max-sm:mr-[5vw]"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <div class="flex gap-[10px] mt-[20px]">
+              <img src="images/Ellipse 17 (2).png" alt="" />
+              <div>
+                <h3 class="text-[#00BFA5] text-[20px]">Kevin Smith</h3>
+                <h6 class="text-[#6C87AE] text-[12px]">Orthopedics Patient</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mr-[15vw] ml-[2vw] mt-[2vw] p-[20px] rounded-[32px] bg-white max-sm:mb-[20px] max-sm:ml-[5vw]"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <div class="flex gap-[10px] mt-[20px]">
+              <img src="images/Ellipse 17 (3).png" alt="" />
+              <div>
+                <h3 class="text-[#00BFA5] text-[20px]">Amanda Jackson</h3>
+                <h6 class="text-[#6C87AE] text-[12px]">Orthopedics Patient</h6>
+              </div>
+            </div>
+          </div>
+          <img
+            src="images/chevron-right.png"
+            alt=""
+            class="absolute left-[5vw] cursor-pointer max-sm:hidden"
+          />
+          <img
+            src="images/chevron-left.png"
+            alt=""
+            class="absolute right-[5vw] cursor-pointer max-sm:hidden"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#1678F2] h-[52vh] text-white flex flex-col w-[100%] max-sm:h-auto max-sm:items-center">
+      <div class="flex justify-evenly py-[5vh] max-sm:flex-col max-sm:text-center max-sm:py-0">
+        <div class="max-sm:hidden">
+          <img src="images/Group 9422.png" alt="" />
+          <p class="my-[7vh] w-[60%]">
+            8 W. South St.Buford, GA 30518 5Briarwood LaneVienna, VA 22180 RER
+          </p>
+          <div class="flex gap-[20px]">
+            <img src="images/youtube.png" alt="" class="cursor-pointer" /><img
+              src="images/facebook.png"
+              alt=""
+              class="cursor-pointer"
+            /><img src="images/whatsapp.png" alt="" class="cursor-pointer" />
+          </div>
+        </div>
+        <div class="mt-[5vh] max-sm:mb-[2vh]">
+          <h3 class="font-bold text-[20px] mb-[20px]">Company Info</h3>
+          <ul>
+            <li class="cursor-pointer hover:underline mb-[10px]">About</li>
+            <li class="cursor-pointer hover:underline mb-[10px]">Services</li>
+            <li class="cursor-pointer hover:underline mb-[10px]">Blog</li>
+          </ul>
+        </div>
+        <div class="mt-[5vh] max-sm:mb-[2vh] max-sm:mt-0">
+          <h3 class="font-bold text-[20px] mb-[20px]">Book Now</h3>
+          <ul>
+            <li class="cursor-pointer hover:underline mb-[10px]">
+              Appointment
+            </li>
+          </ul>
+        </div>
+        <div class="mt-[5vh] max-sm:mb-[2vh] max-sm:mt-0">
+          <h3 class="font-bold text-[20px] mb-[20px]">Book Now</h3>
+          <ul>
+            <li class="cursor-pointer hover:underline mb-[10px]">
+              +1 123456789
+            </li>
+            <li class="cursor-pointer hover:underline mb-[10px]">
+              remmcal@mail.com
+            </li>
+            <li class="cursor-pointer hover:underline mb-[10px]">
+              Phone: +1 12345678
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="self-center h-[1px] w-[80%]" />
+      <p class="self-center my-[1vh] text-center">
+        &copy;Doctor all rights 2023 <br class="hidden max-sm:block"> -Designed by remmcal-
+      </p>
+    </footer>
+  </body>
+</html>
